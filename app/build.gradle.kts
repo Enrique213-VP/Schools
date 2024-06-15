@@ -45,4 +45,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //OkHttp
+    implementation(libs.okhttp)
+
+    //Glide
+    implementation(libs.glide)
+
+    //Lottie
+    val lottieVersion = "6.1.0"
+    implementation ("com.airbnb.android:lottie:$lottieVersion")
+
 }

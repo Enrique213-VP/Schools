@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".iu.town.MainActivity">
-
+    tools:context=".iu.institutions.InstitutionsActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Municipios"
+        android:text="Instituciones"
         android:textSize="24sp"
         android:textStyle="bold"
         android:padding="16dp"
@@ -22,16 +21,15 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:padding="8dp"
         android:clipToPadding="false"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        tools:listitem="@layout/item_municipio"
+        tools:listitem="@layout/item_institucion"
         android:background="@android:color/white"
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"/>
 
-</LinearLayout>
+</LinearLayout >
